@@ -23,19 +23,4 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     private void isCreativeLevelTwoOp(CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(this.getPermissionLevel() >= 2);
     }
-
-    /*
-    @Inject(method = "isCreativeLevelTwoOp", at = @At("HEAD"), cancellable = true)
-    private void isCreativeLevelTwoOp(CallbackInfoReturnable<Boolean> cir) {
-        if (CommandBlockSurvival.config.requireCreative && CommandBlockSurvival.config.requireOp) {
-            cir.setReturnValue(this.abilities.creativeMode && this.getPermissionLevel() >= 2);
-        } else if (CommandBlockSurvival.config.requireCreative) {
-            cir.setReturnValue(this.abilities.creativeMode);
-        } else if (CommandBlockSurvival.config.requireOp) {
-            cir.setReturnValue(this.getPermissionLevel() >= 2);
-        } else {
-            cir.setReturnValue(true);
-        }
-    }
-     */
 }

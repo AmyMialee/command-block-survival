@@ -1,26 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "commandblocksurvival",
+  "id": "command-block-survival",
   "version": "${version}",
   "name": "Command Block Survival",
   "description": "",
   "authors": [
     "AmyMialee"
   ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/command-blocks-survival",
-    "issues": "https://discord.gg/P4dUsxv6An"
-  },
-  "license": "GPL-3.0",
-  "icon": "assets/commandblocksurvival/icon.png",
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/command-block-survival/icon.png",
   "environment": "*",
+  "entrypoints": {
+  },
   "mixins": [
-    "commandblocksurvival.mixins.json"
+    "command-block-survival.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.1",
-    "fabric": "*",
-    "minecraft": "1.16.5"
   },
   "custom": {
     "modupdater": {
